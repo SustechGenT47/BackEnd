@@ -26,6 +26,15 @@ public class Categoria {
 	@Size(min = 3, max = 15, message = "O atributo palavra chave deve conter no mínimo 3 e no máximo 15 caracteres")
 	private String palavraChave;
 	
+	
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String Id) {
+		this.id = id;
+	}
+	
 	public String getTipo() {
 		return tipo;
 	}
