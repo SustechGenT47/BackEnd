@@ -30,10 +30,10 @@ public class Produto {
 	@Size(min = 5, max = 100, message = "O atributo descrição deve possuir no mínimo 5 e no máximo 100 caracteres")
 	private String descricao;
 	
-	@NotEmpty(message = "O atributo quantidade é Obrigatório!")
+	@NotNull(message = "O atributo quantidade é Obrigatório!")
 	private int quantidade;
 	
-	@NotEmpty(message = "O atributo preço é Obrigatório!")
+	@NotNull(message = "O atributo preço é Obrigatório!")
 	private double preco;
 	
 	@NotBlank(message = "O atributo estado é Obrigatório!")
