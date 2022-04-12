@@ -10,6 +10,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 
 @Entity
 @Table(name = "tb_usuarios")
@@ -22,8 +24,9 @@ public class Usuario {
 	@NotNull(message = "Olá, inserir o nome é obrigatório!")
 	private String nome;
 
-	@NotNull(message = "Olá, inserir o login do usuário é obrigatório!")
-	@Email(message = "E-mail invalido, insira um email correto!")
+	@Schema(example = "email@email.com.br")
+	@NotNull(message = "O atributo Usuário é Obrigatório!")
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
 
 	@NotBlank(message = "Olá, inserir a senha é obrigatório!")
