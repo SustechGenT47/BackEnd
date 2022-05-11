@@ -22,7 +22,7 @@ import com.generation.sustech.repository.ProdutoRepository;
 
 @RestController
 @RequestMapping("/produtos")
-@CrossOrigin(origins = "", allowedHeaders = "")
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 public class ProdutoController {
 	
 	@Autowired
